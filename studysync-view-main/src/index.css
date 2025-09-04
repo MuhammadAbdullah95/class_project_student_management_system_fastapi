@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Student Management System Design System */
+
+@layer base {
+  :root {
+    /* Background & Surface Colors */
+    --background: 240 10% 98%;
+    --surface: 0 0% 100%;
+    --surface-elevated: 240 15% 99%;
+    --foreground: 240 10% 9%;
+
+    /* Card & Panel Colors */
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 9%;
+
+    /* Popover Colors */
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 9%;
+
+    /* Primary Brand Colors - Modern Indigo */
+    --primary: 235 69% 61%;
+    --primary-light: 235 69% 71%;
+    --primary-dark: 235 69% 51%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Secondary Colors - Neutral Slate */
+    --secondary: 240 5% 96%;
+    --secondary-foreground: 240 6% 10%;
+
+    /* Muted Colors */
+    --muted: 240 5% 96%;
+    --muted-foreground: 240 4% 46%;
+
+    /* Accent Colors - Soft Blue */
+    --accent: 210 40% 96%;
+    --accent-foreground: 240 6% 10%;
+
+    /* Status Colors */
+    --success: 142 71% 45%;
+    --success-foreground: 0 0% 100%;
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 100%;
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+
+    /* Border & Input Colors */
+    --border: 240 6% 90%;
+    --input: 240 6% 90%;
+    --ring: 235 69% 61%;
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(235 69% 61%) 0%, hsl(235 69% 71%) 100%);
+    --gradient-surface: linear-gradient(180deg, hsl(240 15% 99%) 0%, hsl(0 0% 100%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(235 69% 61%) 0%, hsl(220 70% 65%) 100%);
+
+    /* Shadows */
+    --shadow-sm: 0 1px 2px 0 hsl(240 6% 10% / 0.05);
+    --shadow-md: 0 4px 6px -1px hsl(240 6% 10% / 0.1), 0 2px 4px -1px hsl(240 6% 10% / 0.06);
+    --shadow-lg: 0 10px 15px -3px hsl(240 6% 10% / 0.1), 0 4px 6px -2px hsl(240 6% 10% / 0.05);
+    --shadow-xl: 0 20px 25px -5px hsl(240 6% 10% / 0.1), 0 10px 10px -5px hsl(240 6% 10% / 0.04);
+
+    /* Layout */
+    --radius: 0.75rem;
+    --radius-sm: 0.5rem;
+    --radius-lg: 1rem;
+
+    /* Sidebar */
+    --sidebar-background: 240 15% 99%;
+    --sidebar-foreground: 240 6% 20%;
+    --sidebar-primary: 235 69% 61%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 10% 94%;
+    --sidebar-accent-foreground: 240 6% 10%;
+    --sidebar-border: 240 6% 92%;
+    --sidebar-ring: 235 69% 61%;
+
+    /* Transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-fast: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .dark {
+    --background: 240 10% 4%;
+    --surface: 240 10% 6%;
+    --surface-elevated: 240 10% 8%;
+    --foreground: 240 10% 98%;
+
+    --card: 240 10% 6%;
+    --card-foreground: 240 10% 98%;
+
+    --popover: 240 10% 6%;
+    --popover-foreground: 240 10% 98%;
+
+    --primary: 235 69% 61%;
+    --primary-light: 235 69% 71%;
+    --primary-dark: 235 69% 51%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 240 4% 16%;
+    --secondary-foreground: 240 5% 84%;
+
+    --muted: 240 4% 16%;
+    --muted-foreground: 240 5% 64%;
+
+    --accent: 240 4% 16%;
+    --accent-foreground: 240 5% 84%;
+
+    --success: 142 71% 45%;
+    --warning: 38 92% 50%;
+    --destructive: 0 72% 51%;
+
+    --border: 240 4% 18%;
+    --input: 240 4% 18%;
+    --ring: 235 69% 61%;
+
+    --gradient-primary: linear-gradient(135deg, hsl(235 69% 61%) 0%, hsl(235 69% 71%) 100%);
+    --gradient-surface: linear-gradient(180deg, hsl(240 10% 8%) 0%, hsl(240 10% 6%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(235 69% 61%) 0%, hsl(220 70% 65%) 100%);
+
+    --sidebar-background: 240 10% 6%;
+    --sidebar-foreground: 240 5% 84%;
+    --sidebar-primary: 235 69% 61%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 4% 16%;
+    --sidebar-accent-foreground: 240 5% 84%;
+    --sidebar-border: 240 4% 18%;
+    --sidebar-ring: 235 69% 61%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+  }
+}
